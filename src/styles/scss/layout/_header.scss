@@ -1,0 +1,12 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.header {
+  &__inner {
+  }
+  &__logo {
+    a {
+    }
+  }
+}

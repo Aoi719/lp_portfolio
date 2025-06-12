@@ -1,0 +1,20 @@
+// base
+@use "base/reset";
+@use "base/base";
+
+//settings
+
+// layout
+@use "layout/layouts";
+@use "layout/header";
+@use "layout/footer";
+
+// utilities
+@use "utilities/display";
+@use "utilities/margins";
+@use "utilities/paddings";
+@use "utilities/width";
+@use "utilities/texts";
+
+// components
+@use "components/section";
