@@ -123,6 +123,22 @@ select:focus {
   position: relative;
 }
 
+.header {
+  background: #000;
+  padding: 45px 50px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.header__title {
+  color: #fff;
+  font-weight: bold;
+}
+.header__logo {
+  max-width: 65px;
+}
+
 .sr-only {
   position: absolute !important;
   width: 1px !important;
@@ -721,4 +737,39 @@ select:focus {
 }
 .section.bg-black {
   background-color: #000;
+}
+
+.mv {
+  position: relative;
+}
+.mv__inner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.mv__img {
+  max-width: 33.8%;
+}
+.mv__img > img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.mv__content {
+  flex-grow: 1;
+  background: #fee600;
+  text-align: center;
+  padding: 100px;
+}
+.mv__content-inner {
+  display: inline-block;
+  text-align: left;
+}
+.mv__title {
+  line-height: 1.1;
+  font-size: 5.25rem;
+}
+.mv__text {
+  font-size: 2.25rem;
+  margin-top: 20px;
 }

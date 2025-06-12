@@ -1,0 +1,42 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.mv {
+  position: relative;
+  &__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  &__img {
+    max-width: 33.8%;
+    > img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    flex-grow: 1;
+    background: $main-color;
+    text-align: center;
+    padding: 100px;
+  }
+  &__content-inner {
+    display: inline-block;
+    text-align: left;
+  }
+  &__title {
+    line-height: 1.1;
+    font-size: fz(84);
+  }
+  &__text {
+    font-size: fz(36);
+    margin-top: 20px;
+  }
+  &__btn-wrapper {
+  }
+  &__btn {
+  }
+}
