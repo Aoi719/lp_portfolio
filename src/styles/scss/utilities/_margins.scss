@@ -102,7 +102,7 @@
 }
 
 // 5刻み
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
   $num: $i * 5;
 
   .mt-#{$num} {
