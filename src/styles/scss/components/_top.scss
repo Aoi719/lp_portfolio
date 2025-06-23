@@ -5,6 +5,9 @@
 .section {
   &__inner {
     padding: 100px 20px;
+    @include mq {
+      padding: 64px 20px;
+    }
   }
   &.bg-main {
     background-color: $main-color;
@@ -19,9 +22,14 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    @include mq {
+      flex-direction: column-reverse;
+    }
   }
   &__img {
-    max-width: 33.8%;
+    @include mqup {
+      max-width: 33.8%;
+    }
     > img {
       width: auto;
       height: 100%;
@@ -33,24 +41,52 @@
     background: $main-color;
     text-align: center;
     padding: 100px;
+    @include mq(xl) {
+      padding: 32px 20px;
+    }
+    @include mq {
+      padding: 24px 20px;
+    }
   }
   &__content-inner {
-    display: inline-block;
     text-align: left;
+    @include mqup {
+      display: inline-block;
+    }
   }
   &__title {
     line-height: 1.1;
     font-size: fz(84);
+    @include mq(xl) {
+      font-size: clamp(fz(48), 6.25vw, fz(64));
+    }
+    @include mq {
+      font-size: clamp(fz(32), 8.533vw, fz(48));
+    }
   }
   &__text {
     font-size: fz(36);
     margin-top: 20px;
+    @include mq {
+      font-size: clamp(fz(18), 4.8vw, fz(32));
+    }
   }
   &__btn-wrapper {
+    margin-top: 50px;
+    @include mq {
+      margin-top: 24px;
+    }
   }
   &__btn {
-    max-width: 228px;
+    max-width: 228px !important;
     font-size: fz(28);
+    @include mq(xl) {
+      font-size: fz(24);
+    }
+    @include mq {
+      max-width: 180px !important;
+      font-size: fz(16);
+    }
   }
 }
 .btn-wrapper {
@@ -103,6 +139,9 @@
   color: $main-color;
   margin-block: $leading-trim;
   font-size: fz(48);
+  @include mq {
+    font-size: clamp(fz(24), 6.4vw, fz(32));
+  }
   &--black {
     color: $black;
   }
@@ -113,12 +152,22 @@
   font-size: fz(28);
   margin-top: 14px;
   margin-bottom: 85px;
+  @include mq {
+    font-size: fz(18);
+    max-width: 80%;
+    margin-inline: auto;
+    margin-bottom: 40px;
+  }
 }
 
 .col-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 62px;
+  @include mq {
+    grid-template-columns: 1fr;
+  }
+
   &__item {
   }
 }
@@ -126,13 +175,23 @@
 .section-01 {
   .point {
     margin-top: 130px;
-    grid-template-columns: repeat(3, 362px);
     justify-content: center;
+    @include mqup {
+      grid-template-columns: repeat(3, 26.5%);
+    }
+    @include mq {
+      margin: 80px auto 0;
+      max-width: 80%;
+    }
     &__icon {
       text-align: center;
       > img {
         width: 62px;
         height: 62px;
+        @include mq(xl) {
+          width: 48px;
+          height: 48px;
+        }
       }
     }
     &__title {
@@ -141,12 +200,20 @@
       margin-block: $leading-trim;
       text-align: center;
       margin-top: 38px;
+      @include mq(xl) {
+        font-size: fz(24);
+        margin-top: 24px;
+      }
     }
     &__text {
       color: $main-color;
       font-size: fz(24);
       margin-block: $leading-trim;
       margin-top: 25px;
+      @include mq(xl) {
+        font-size: fz(18);
+        margin-top: 18px;
+      }
     }
   }
 }
@@ -155,19 +222,37 @@
   .catch {
     display: flex;
     justify-content: center;
+    @include mq {
+      flex-direction: column;
+      align-items: center;
+    }
     &__img {
-      margin-right: 136px;
+      @include mqup {
+        margin-right: 10%;
+      }
+      @include mq {
+        max-width: 70%;
+        margin-inline: auto;
+      }
     }
     &__content {
     }
     &__title {
       font-size: fz(108);
       font-weight: normal;
+      @include mq {
+        margin-top: 24px;
+        font-size: clamp(fz(48), 12.8vw, fz(64));
+      }
     }
     &__text {
       font-size: fz(30);
       font-weight: bold;
       margin-top: 32px;
+      @include mq {
+        font-size: fz(24);
+        margin-top: 24px;
+      }
     }
   }
 }
@@ -180,38 +265,72 @@
   }
   .features {
     display: flex;
+    @include mq {
+      flex-direction: column;
+    }
     &__item {
       &:nth-child(1) {
         flex-grow: 1;
-        padding: 100px;
+        @include mqup {
+          padding: 100px;
+        }
       }
       &:nth-child(2) {
-        flex: 0 0 800px;
+        @include mqup {
+          flex: 0 0 50%;
+        }
+      }
+    }
+    &__img {
+      height: 100%;
+      > img {
+        height: inherit;
+        object-fit: cover;
       }
     }
   }
   .features-list {
     margin-top: 60px;
+    @include mq {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
     > li {
       display: flex;
       align-items: center;
       margin-top: 30px;
+      @include mq {
+        margin-top: 18px;
+      }
+
       &:first-child {
         margin-top: 0;
       }
     }
     &__img {
       flex: 0 0 114px;
+      @include mq {
+        flex: 0 0 90px;
+      }
     }
     &__text {
       font-size: fz(20);
       margin-left: 28px;
       line-height: 1.3;
+      @include mq {
+        margin-left: 20px;
+        font-size: fz(18);
+      }
     }
   }
 }
 .section-04 {
   .plan {
+    .col-grid {
+      @include mq {
+        gap: 40px;
+      }
+    }
     &__bg {
       background: url("/assets/images/img04.jpg") center center/cover no-repeat;
       position: relative;
@@ -223,14 +342,36 @@
       color: $main-color;
       margin-bottom: 14px;
       letter-spacing: 0.08em;
+      @include mq {
+        max-width: 80%;
+        margin-inline: auto;
+        font-size: fz(24);
+      }
     }
     .disc-list {
+      @include mq {
+        max-width: 80%;
+        margin-inline: auto;
+      }
       li {
         font-size: fz(20);
         margin-block: $leading-trim;
+        @include mq {
+          font-size: fz(18);
+        }
+      }
+    }
+    .btn-wrapper {
+      margin-top: 50px;
+      @include mq {
+        margin-top: 24px;
       }
     }
     .btn {
+      @include mq {
+        max-width: 80%;
+        margin-inline: auto;
+      }
       &::before {
         background: $main-color;
       }
@@ -256,43 +397,77 @@
   .col-grid {
     margin-top: 100px;
     gap: 62px;
+    @include mq {
+      gap: 100px;
+    }
   }
   .voice {
     position: relative;
+    @include mq {
+      max-width: 80%;
+      margin-inline: auto;
+    }
     &__img {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
+      @include mq {
+        width: 120px;
+        height: 120px;
+      }
     }
     &__title {
       background-color: $main-color;
       padding: 100px 32px 24px;
       border-radius: 8px;
       font-size: fz(26);
+      @include mq {
+        padding: 64px 24px 18px;
+        font-size: fz(18);
+      }
     }
     &__text {
       margin-top: 30px;
       font-size: fz(20);
+      @include mq {
+        margin-top: 16px;
+        font-size: fz(16);
+      }
     }
   }
 }
 .section-06 {
   .cta {
     display: flex;
+    @include mq {
+      flex-direction: column;
+    }
     &__img {
     }
     &__content {
-      margin-left: 7.32%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include mqup {
+        margin-left: 7.32%;
+        padding-right: 20px;
+      }
+      @include mq {
+        max-width: 80%;
+        margin-inline: auto;
+        margin-top: 24px;
+      }
     }
     &__text {
       color: $main-color;
       font-size: fz(48);
       font-weight: bold;
       margin-bottom: 80px;
+      @include mq {
+        font-size: fz(32);
+        margin-bottom: 24px;
+      }
     }
     .btn {
       &::before {
@@ -305,6 +480,12 @@
   }
   .logo-area {
     padding: 40px 50px;
+    .logo {
+      @include mq {
+        max-width: 80%;
+        margin-inline: auto;
+      }
+    }
   }
 }
 
@@ -314,7 +495,19 @@
   }
   .contact {
     display: flex;
+    @include mq {
+      flex-direction: column;
+    }
+
     &__img {
+      > img {
+        height: 100%;
+        object-fit: cover;
+        @include mq {
+          width: 100%;
+          max-height: 300px;
+        }
+      }
     }
     &__content {
       margin-left: 7.32%;
@@ -323,15 +516,34 @@
       justify-content: center;
       font-size: fz(32);
       font-weight: bold;
+      @include mqup {
+        padding: 20px 20px 20px 0;
+      }
+
+      @include mq {
+        margin-left: 0;
+        font-size: fz(18);
+        padding: 20px;
+      }
       .heading {
         margin-bottom: 48px;
+        @include mq {
+          margin-bottom: 24px;
+          font-size: fz(24);
+        }
       }
     }
     &__address {
       margin-bottom: 48px;
+      @include mq {
+        margin-bottom: 24px;
+      }
     }
     &__tel {
       margin-bottom: 48px;
+      @include mq {
+        margin-bottom: 24px;
+      }
     }
     &__mail {
     }

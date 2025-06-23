@@ -5,6 +5,9 @@
 .header {
   background: $black;
   padding: 45px 50px;
+  @include mq {
+    padding: 24px;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -15,5 +18,8 @@
   }
   &__logo {
     max-width: 65px;
+    @include mq {
+      max-width: 40px;
+    }
   }
 }
