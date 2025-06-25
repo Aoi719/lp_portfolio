@@ -1072,7 +1072,7 @@ select:focus {
 }
 @media screen and (min-width: 769px) {
   .section-03 .features__item:nth-child(1) {
-    padding: 100px;
+    padding: clamp(48px, 5.2vw, 100px);
   }
 }
 @media screen and (min-width: 769px) {
@@ -1084,6 +1084,7 @@ select:focus {
   height: 100%;
 }
 .section-03 .features__img > img {
+  width: 100%;
   height: inherit;
   object-fit: cover;
 }
