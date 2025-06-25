@@ -55,6 +55,7 @@
     }
   }
   &__title {
+    opacity: 0;
     line-height: 1.1;
     font-size: fz(84);
     @include mq(xl) {
@@ -78,7 +79,6 @@
     }
   }
   &__btn {
-    max-width: 228px !important;
     font-size: fz(28);
     @include mq(xl) {
       font-size: fz(24);

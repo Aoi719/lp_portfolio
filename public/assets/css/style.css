@@ -93,7 +93,7 @@ body {
   font-size: 1rem;
   line-height: 1.7;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   body {
     font-size: 0.875rem;
   }
@@ -127,7 +127,7 @@ select:focus {
   background: #000;
   padding: 45px 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .header {
     padding: 24px;
   }
@@ -143,7 +143,7 @@ select:focus {
 .header__logo {
   max-width: 65px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .header__logo {
     max-width: 40px;
   }
@@ -177,7 +177,7 @@ select:focus {
   display: none !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .sp-d-b {
     display: block !important;
   }
@@ -676,7 +676,7 @@ select:focus {
   padding-bottom: 0 !important;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mqup-p-0 {
     padding: 0 !important;
   }
@@ -767,7 +767,7 @@ select:focus {
 .section__inner {
   padding: 100px 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section__inner {
     padding: 64px 20px;
   }
@@ -787,12 +787,12 @@ select:focus {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .mv__inner {
     flex-direction: column-reverse;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mv__img {
     max-width: 33.8%;
   }
@@ -813,7 +813,7 @@ select:focus {
     padding: 32px 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .mv__content {
     padding: 24px 20px;
   }
@@ -821,12 +821,13 @@ select:focus {
 .mv__content-inner {
   text-align: left;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mv__content-inner {
     display: inline-block;
   }
 }
 .mv__title {
+  opacity: 0;
   line-height: 1.1;
   font-size: 5.25rem;
 }
@@ -835,7 +836,7 @@ select:focus {
     font-size: clamp(3rem, 6.25vw, 4rem);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .mv__title {
     font-size: clamp(2rem, 8.533vw, 3rem);
   }
@@ -844,7 +845,7 @@ select:focus {
   font-size: 2.25rem;
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .mv__text {
     font-size: clamp(1.125rem, 4.8vw, 2rem);
   }
@@ -852,13 +853,12 @@ select:focus {
 .mv__btn-wrapper {
   margin-top: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .mv__btn-wrapper {
     margin-top: 24px;
   }
 }
 .mv__btn {
-  max-width: 228px !important;
   font-size: 1.75rem;
 }
 @media screen and (max-width: 1200px) {
@@ -866,7 +866,7 @@ select:focus {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .mv__btn {
     max-width: 180px !important;
     font-size: 1rem;
@@ -923,7 +923,7 @@ select:focus {
   margin-block: calc((1em - 1lh) / 2);
   font-size: 3rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .heading {
     font-size: clamp(1.5rem, 6.4vw, 2rem);
   }
@@ -938,7 +938,7 @@ select:focus {
   margin-top: 14px;
   margin-bottom: 85px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .text {
     font-size: 1.125rem;
     max-width: 80%;
@@ -952,7 +952,7 @@ select:focus {
   grid-template-columns: repeat(3, 1fr);
   gap: 62px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .col-grid {
     grid-template-columns: 1fr;
   }
@@ -961,12 +961,12 @@ select:focus {
   margin-top: 130px;
   justify-content: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .section-01 .point {
     grid-template-columns: repeat(3, 26.5%);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-01 .point {
     margin: 80px auto 0;
     max-width: 80%;
@@ -1015,18 +1015,18 @@ select:focus {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-02 .catch {
     flex-direction: column;
     align-items: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .section-02 .catch__img {
     margin-right: 10%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-02 .catch__img {
     max-width: 70%;
     margin-inline: auto;
@@ -1036,7 +1036,7 @@ select:focus {
   font-size: 6.75rem;
   font-weight: normal;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-02 .catch__title {
     margin-top: 24px;
     font-size: clamp(3rem, 12.8vw, 4rem);
@@ -1047,7 +1047,7 @@ select:focus {
   font-weight: bold;
   margin-top: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-02 .catch__text {
     font-size: 1.5rem;
     margin-top: 24px;
@@ -1062,7 +1062,7 @@ select:focus {
 .section-03 .features {
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-03 .features {
     flex-direction: column;
   }
@@ -1070,12 +1070,12 @@ select:focus {
 .section-03 .features__item:nth-child(1) {
   flex-grow: 1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .section-03 .features__item:nth-child(1) {
     padding: 100px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .section-03 .features__item:nth-child(2) {
     flex: 0 0 50%;
   }
@@ -1090,7 +1090,7 @@ select:focus {
 .section-03 .features-list {
   margin-top: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-03 .features-list {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -1101,7 +1101,7 @@ select:focus {
   align-items: center;
   margin-top: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-03 .features-list > li {
     margin-top: 18px;
   }
@@ -1112,7 +1112,7 @@ select:focus {
 .section-03 .features-list__img {
   flex: 0 0 114px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-03 .features-list__img {
     flex: 0 0 90px;
   }
@@ -1122,14 +1122,14 @@ select:focus {
   margin-left: 28px;
   line-height: 1.3;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-03 .features-list__text {
     margin-left: 20px;
     font-size: 1.125rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-04 .plan .col-grid {
     gap: 40px;
   }
@@ -1146,14 +1146,14 @@ select:focus {
   margin-bottom: 14px;
   letter-spacing: 0.08em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-04 .plan__title {
     max-width: 80%;
     margin-inline: auto;
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-04 .plan .disc-list {
     max-width: 80%;
     margin-inline: auto;
@@ -1163,7 +1163,7 @@ select:focus {
   font-size: 1.25rem;
   margin-block: calc((1em - 1lh) / 2);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-04 .plan .disc-list li {
     font-size: 1.125rem;
   }
@@ -1171,12 +1171,12 @@ select:focus {
 .section-04 .plan .btn-wrapper {
   margin-top: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-04 .plan .btn-wrapper {
     margin-top: 24px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-04 .plan .btn {
     max-width: 80%;
     margin-inline: auto;
@@ -1206,7 +1206,7 @@ select:focus {
   margin-top: 100px;
   gap: 62px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-05 .col-grid {
     gap: 100px;
   }
@@ -1214,7 +1214,7 @@ select:focus {
 .section-05 .voice {
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-05 .voice {
     max-width: 80%;
     margin-inline: auto;
@@ -1226,7 +1226,7 @@ select:focus {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-05 .voice__img {
     width: 120px;
     height: 120px;
@@ -1238,7 +1238,7 @@ select:focus {
   border-radius: 8px;
   font-size: 1.625rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-05 .voice__title {
     padding: 64px 24px 18px;
     font-size: 1.125rem;
@@ -1248,7 +1248,7 @@ select:focus {
   margin-top: 30px;
   font-size: 1.25rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-05 .voice__text {
     margin-top: 16px;
     font-size: 1rem;
@@ -1258,7 +1258,7 @@ select:focus {
 .section-06 .cta {
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-06 .cta {
     flex-direction: column;
   }
@@ -1268,13 +1268,13 @@ select:focus {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .section-06 .cta__content {
     margin-left: 7.32%;
     padding-right: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-06 .cta__content {
     max-width: 80%;
     margin-inline: auto;
@@ -1287,7 +1287,7 @@ select:focus {
   font-weight: bold;
   margin-bottom: 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-06 .cta__text {
     font-size: 2rem;
     margin-bottom: 24px;
@@ -1302,7 +1302,7 @@ select:focus {
 .section-06 .logo-area {
   padding: 40px 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .section-06 .logo-area .logo {
     max-width: 80%;
     margin-inline: auto;
@@ -1315,7 +1315,7 @@ select:focus {
 .footer .contact {
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .footer .contact {
     flex-direction: column;
   }
@@ -1324,7 +1324,7 @@ select:focus {
   height: 100%;
   object-fit: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .footer .contact__img > img {
     width: 100%;
     max-height: 300px;
@@ -1338,12 +1338,12 @@ select:focus {
   font-size: 2rem;
   font-weight: bold;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .footer .contact__content {
     padding: 20px 20px 20px 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .footer .contact__content {
     margin-left: 0;
     font-size: 1.125rem;
@@ -1353,7 +1353,7 @@ select:focus {
 .footer .contact__content .heading {
   margin-bottom: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .footer .contact__content .heading {
     margin-bottom: 24px;
     font-size: 1.5rem;
@@ -1362,7 +1362,7 @@ select:focus {
 .footer .contact__address {
   margin-bottom: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .footer .contact__address {
     margin-bottom: 24px;
   }
@@ -1370,8 +1370,44 @@ select:focus {
 .footer .contact__tel {
   margin-bottom: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .footer .contact__tel {
     margin-bottom: 24px;
+  }
+}
+.animate-fade {
+  opacity: 0;
+}
+
+.fade {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.fade-delay01 {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(100px);
+  animation-delay: 0.5s;
+}
+
+.fade-delay02 {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(100px);
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
