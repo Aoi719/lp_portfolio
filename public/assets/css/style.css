@@ -1135,7 +1135,7 @@ select:focus {
   }
 }
 .section-04 .plan__bg {
-  background: url("/assets/images/img04.jpg") center center/cover no-repeat;
+  background: url("../../assets/images/img04.jpg") center center/cover no-repeat;
   position: relative;
   padding: 60px 7.32%;
 }
