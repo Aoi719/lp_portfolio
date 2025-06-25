@@ -272,7 +272,7 @@
       &:nth-child(1) {
         flex-grow: 1;
         @include mqup {
-          padding: 100px;
+          padding: clamp(48px, 5.2vw, 100px);
         }
       }
       &:nth-child(2) {
@@ -284,6 +284,7 @@
     &__img {
       height: 100%;
       > img {
+        width: 100%;
         height: inherit;
         object-fit: cover;
       }
